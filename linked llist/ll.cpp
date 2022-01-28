@@ -25,6 +25,28 @@ void insertAtHead(Node* &head, int data){
     }
 }
 
+void insertAtTail(Node* &head,Node* &tail,int data){
+    Node* temp = new Node(data);
+    if(head == NULL){
+        head = temp;
+        temp -> next = NULL;
+    }
+    if(tail == NULL){
+        tail = head;
+        while (t->next != NULL)
+        {
+            tail = t;
+            t = t -> next;
+        }
+        
+    }
+    else{
+        tail->next = temp;
+        tail = temp;
+    }
+
+}
+
 void traversell(Node* &head){
     Node* temp = head;
     while (temp != NULL)
@@ -39,6 +61,8 @@ int main()
 {
     //created a head
     Node* head;
+    Node* tail;
+
 
     //created a new node
     Node* node1 = new Node(10);
@@ -56,7 +80,8 @@ int main()
     {
     cout<<"enter node: ";
     cin>>value;
-    insertAtHead(head,value);
+    // insertAtHead(head,value);
+    insertAtTail(head, tail, value);
     }
 
 
