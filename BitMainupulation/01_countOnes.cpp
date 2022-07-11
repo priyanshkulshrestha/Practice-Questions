@@ -13,7 +13,6 @@ class Solution {
                  i++;
              }
              N = N>>1;
-             
          }
          return i;
     }

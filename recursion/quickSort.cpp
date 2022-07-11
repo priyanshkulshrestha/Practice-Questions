@@ -36,8 +36,9 @@ class Solution
     int partition (int arr[], int low, int high)
     {
        // Your code here
+    //    select pivot 
         int pivot = arr[low];
-   
+//    count no of small element tham pivot
        int cnt = 0;
        for(int i=low+1;i<=high; i++){
            if(arr[i] <= pivot)

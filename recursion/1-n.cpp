@@ -4,13 +4,10 @@ int i =1;
 
 void f(int n, int i){
     // cout<< n<< "\t"<< i <<endl;
-    if(i>n)
-    return;
+    if(i>n) return; 
     i++;
     f(n,i);
-    cout<<i<<"\n";
-    
-    
+    cout << i << "\n";   
 }
 
 int main()

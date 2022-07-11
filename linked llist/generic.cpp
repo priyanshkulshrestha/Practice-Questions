@@ -35,7 +35,7 @@ class linkedlist{
 
         else{
         ptr->next = head;
-        head = ptr;
+        v       head = ptr;
         }
         length++;
     }

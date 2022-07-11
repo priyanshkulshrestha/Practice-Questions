@@ -2,10 +2,10 @@
 using namespace std;
 
 int binarySearch(int arr[], int s, int e, int key){
-    cout<<"checking\n";
-    int mid = s + (e-s)/2;
+    // cout<<"checking\n";
     if(s>=e)
     return -1;
+    int mid = s + (e-s)/2;
     if(arr[mid] == key)
     return mid;
     else if (arr[mid] < key)

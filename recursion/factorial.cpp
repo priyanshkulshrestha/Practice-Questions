@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int solve(int n){
+int solve(int n){ 
     if(n==1){
         return 1;
     }
