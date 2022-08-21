@@ -37,7 +37,7 @@ public:
     Hero(int level){
         cout<<"this -> "<<this<<endl;
         //this keyword stores the address of object
-        //so this.leve is level of object and level is passed value in constructor
+        //so this.level is level of object and level is passed value in constructor
         this->level = level;
     }
 
