@@ -37,8 +37,7 @@ void insertAtTail(Node* &head,Node* &tail,int data){
         {
             tail = t;
             t = t -> next;
-        }
-        
+        }   
     }
     else{
         tail->next = temp;
