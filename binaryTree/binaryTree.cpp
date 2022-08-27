@@ -75,7 +75,7 @@ void levelOrderTraversal(Node* root){
 //         }
 //         else{
 //             cout<<temp->data<<" ";
-
+   
 //             if(temp->left){
 //                 q.push(temp->left);
 //             }
@@ -84,7 +84,6 @@ void levelOrderTraversal(Node* root){
 //             }
 //         }
 //     }
-    
 // }
 
 void reverseLevelOrderTraversal(Node* root){
