@@ -34,57 +34,59 @@ Node* buildTree(Node* root){
     return root;
 }
 
-void levelOrderTraversal(Node* root){
-    cout<<"LEVEL ORDER TRAVERSAL : "<<endl;
-    queue<Node*> q;
-    q.push(root);
-
-    while (!q.empty())
-    {
-        Node* temp = q.front();
-        cout<<temp->data<<" ";
-        q.pop();
-        
-
-            if(temp->left){
-                q.push(temp->left);
-            }
-            if(temp->right){
-                q.push(temp->right);
-            }
-        
-    }
-    
-}
-
-// *****************************************
-// LEVEL ORDER WITH LEVELS AND SEPRATE LINES
-// *****************************************
 // void levelOrderTraversal(Node* root){
+//     cout<<"LEVEL ORDER TRAVERSAL : "<<endl;
 //     queue<Node*> q;
 //     q.push(root);
-//     q.push(NULL);
 
 //     while (!q.empty())
 //     {
 //         Node* temp = q.front();
+//         cout<<temp->data<<" ";
 //         q.pop();
-//         if(temp == NULL){
-//             cout<<"\n";
-//             q.push(NULL);
-//         }
-//         else{
-//             cout<<temp->data<<" ";
-   
+        
+
 //             if(temp->left){
 //                 q.push(temp->left);
 //             }
 //             if(temp->right){
 //                 q.push(temp->right);
 //             }
-//         }
+        
 //     }
+    
 // }
+
+// *****************************************
+// LEVEL ORDER WITH LEVELS AND SEPRATE LINES
+// *****************************************
+void levelOrderTraversal(Node* root){
+    queue<Node*> q;
+    q.push(root);
+    q.push(NULL);
+
+    while (!q.empty())
+    {
+        Node* temp = q.front();
+        q.pop();
+
+        if(temp == NULL){
+            cout<<"\n";
+            if(!q.empty())
+            q.push(NULL);
+        }
+        else{
+            cout<<temp->data<<" ";
+   
+            if(temp->left){
+                q.push(temp->left);
+            }
+            if(temp->right){
+                q.push(temp->right);
+            }
+        }
+    }
+}
 
 void reverseLevelOrderTraversal(Node* root){
     cout<<"REVERSE LEVEL ORDER TRAVERSAL : "<<endl;
@@ -149,6 +151,7 @@ int main()
     root = buildTree(root);
 
     cout<<endl;
+    cout<<"LEVEL ORDER TRAVERSAL : "<<endl;
     levelOrderTraversal(root);
 
     cout<<endl;
