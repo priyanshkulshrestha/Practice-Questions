@@ -14,6 +14,6 @@ int speed(bool direction, int speed1, int time1, int speed2, int time2){
 }
 int main()
 {
-    cout<<speed(0, 30, 12, 20, 6);+
+    cout<<speed(0, 30, 12, 20, 6);
     return 0;
 }
