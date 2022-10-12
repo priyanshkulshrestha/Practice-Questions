@@ -78,7 +78,7 @@ int main()
     (*h2).val = 10;
     //using derefrencing operator
     cout<<(*h2).val<<endl;
-    (*h2).setLevel(10);
+ z     (*h2).setLevel(10);
     cout<<(*h2).getLevel()<<endl;
 
     cout<<h2->val<<endl; //using -> operator
