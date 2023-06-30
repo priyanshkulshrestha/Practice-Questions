@@ -8,7 +8,6 @@ class Graph{
         void addEdge(int u, int v, bool direction){
             // When direction s given only one edge will be created else edge from both side will be created.
             if(direction){
-            
                 adj[u].push_back(v); 
             }
             else{
@@ -26,6 +25,8 @@ class Graph{
                 cout<<endl;
             }
         }
+
+        
 };
  
 int main()
@@ -50,4 +51,4 @@ int main()
 
     g.printAdjList();
     return 0;
-}
+}   
