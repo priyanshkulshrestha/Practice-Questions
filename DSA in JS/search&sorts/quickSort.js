@@ -1,11 +1,10 @@
 let arr = [2,8,9,1,5,7,3,6,4];
 
 function partition(arr, start, end){
-    console.log(arr, start, end);
     let pivot = arr[start];
 
     let count = 0;
-    for(let i=start+1;i<end;i++){
+    for(let i=start+1;i<=end;i++){
         if(arr[i] <= pivot)
             count++;
     }
@@ -32,9 +31,7 @@ function partition(arr, start, end){
         }
         
     }
-    console.log(pivotIndex);
     return pivotIndex;
-    
 }
 
 function quickSort(arr, start, end){
