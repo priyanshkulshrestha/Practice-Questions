@@ -1,5 +1,4 @@
 let solve = function(digits, output, ans, index, mapping){
-    console.log(digits, output, index+1, ans);
     if(index >= digits.length){
         ans.push(output);
         return;
