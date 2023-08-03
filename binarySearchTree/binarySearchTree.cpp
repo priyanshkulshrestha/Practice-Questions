@@ -73,6 +73,7 @@ void takeInput(Node* &root){
         cin>> data;
     }
 }
+
 int main()
 {
     Node* root = NULL;
