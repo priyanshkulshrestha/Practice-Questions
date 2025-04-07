@@ -1,3 +1,4 @@
+
 // Map
 // Map is an unorderd collection of key-value pair. 
 
@@ -5,7 +6,7 @@
 let m = new Map([['a',1],['b',2]])
 
 // check size of map
-console.log(m.size);
+    console.log(m.size);
 
 // Insertion 
 m.set("c", 3)
@@ -23,6 +24,10 @@ m.forEach((key, value)=>{
     console.log(key, value);
 })
 
+//delete a property
+m.delete("c");
+
+
+console.log(m);
 // delete whole map 
 m.clear()
-

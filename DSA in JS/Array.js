@@ -15,7 +15,7 @@ arr.push(...[3,4,5,6,7,8,9,10]) // push elements of another array using spread o
 
 // traverse
 for (let index in arr){
-    // console.log(index); // it traverse through index
+    // console.log(arr[index]); // it traverse through index
 }
 for (let item of arr){
     // console.log(item); // it traverse through values
