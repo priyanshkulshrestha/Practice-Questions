@@ -1,3 +1,5 @@
+// 605. Can Place Flowers
+
 var canPlaceFlowers = function(flowerbed, n) {
     let count = 0
     if(flowerbed[0] == 0 && flowerbed[1] !=1){
