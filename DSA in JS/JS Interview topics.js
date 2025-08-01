@@ -19,6 +19,9 @@
 // Generators
 // function declaration, function expression
 // IIFE
+// Object destructuring, array destructuring
+// Spread operator, rest operator
+// Yield operator, Iterators
 
 // Indexing in db
 

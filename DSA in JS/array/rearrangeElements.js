@@ -14,5 +14,7 @@ var rearrangeArray = function(nums) {
     return ans;
 };
 
+
+// Dont try to solve implace, as it will not work
 let arr = [3,1,-2,-5,2,-4];
 console.log(rearrangeArray(arr));
